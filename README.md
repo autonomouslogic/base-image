@@ -3,8 +3,8 @@ Basic Docker image useful for builds and such.
 
 View on [Docker Hub](https://hub.docker.com/r/autonomouslogic/base-image).
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/autonomouslogic/base-image)](https://github.com/autonomouslogic/semantic-release-docker/releases)
-[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/autonomouslogic/base-image/Build/main)](https://github.com/autonomouslogic/semantic-release-docker/actions)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/autonomouslogic/base-image)](https://github.com/autonomouslogic/base-image/releases)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/autonomouslogic/base-image/build.yml?branch=main)](https://github.com/autonomouslogic/base-image/actions)
 [![GitHub](https://img.shields.io/github/license/autonomouslogic/base-image)](https://spdx.org/licenses/MIT-0.html)
 
 The image contains:
