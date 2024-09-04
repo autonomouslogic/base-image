@@ -1,6 +1,5 @@
 # Base Docker Image
 Basic Docker image useful for builds and such.
-At Autonomous Logic, this is used for custom CI jobs and the like
 
 View on [Docker Hub](https://hub.docker.com/r/autonomouslogic/base-image).
 
