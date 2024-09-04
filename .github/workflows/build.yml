@@ -1,0 +1,17 @@
+name: Build
+on: [ push ]
+jobs:
+  Test:
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Docker Build
+        run: |
+          docker build -t autonomouslogic/base-image .
+
+      - name: Docker Run
+        run: |
+          docker run autonomouslogic/base-image uname
