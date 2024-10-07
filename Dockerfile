@@ -1,4 +1,4 @@
-FROM ghcr.io/containerbase/base:11.11.29
+FROM ghcr.io/containerbase/base:11.11.30
 
 LABEL name="sbase-image" \
   maintainer="Kenneth Jørgensen <kenneth@autonomouslogic.com>" \
@@ -10,7 +10,7 @@ LABEL name="sbase-image" \
 WORKDIR /usr/src/build
 
 # renovate: datasource=github-tags lookupName=git/git
-RUN install-tool git v2.46.2
+RUN install-tool git v2.47.0
 
 # renovate: datasource=docker versioning=docker
 RUN install-tool node 20.18.0
