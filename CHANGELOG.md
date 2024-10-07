@@ -1,5 +1,17 @@
 Base Docker Image Changelog
 
+## [1.0.1](https://github.com/autonomouslogic/base-image/compare/1.0.0...1.0.1) (2024-10-07)
+
+
+### Documentation
+
+* Fixed badges ([aed0e79](https://github.com/autonomouslogic/base-image/commit/aed0e7923ca2c7e89332dd67022765a1ecc7d8f2))
+
+
+### Dependency Updates
+
+* **deps:** update all non-major dependencies ([7b83dbc](https://github.com/autonomouslogic/base-image/commit/7b83dbcbe8f7cf544e1cc63b608086ccb0936470))
+
 ## 1.0.0 (2024-09-04)
 
 
