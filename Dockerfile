@@ -1,4 +1,4 @@
-FROM ghcr.io/containerbase/base:11.11.30
+FROM ghcr.io/containerbase/base:11.11.41
 
 LABEL name="sbase-image" \
   maintainer="Kenneth Jørgensen <kenneth@autonomouslogic.com>" \
@@ -24,7 +24,7 @@ COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-bui
 RUN docker buildx install
 
 # renovate: datasource=adoptium-java
-RUN install-tool java 21.0.4+7.0.LTS
+RUN install-tool java 21.0.5+11.0.LTS
 
 # renovate: datasource=gradle-version versioning=gradle
 RUN install-tool gradle 8.10.2
