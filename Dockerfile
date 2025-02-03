@@ -10,24 +10,24 @@ LABEL name="sbase-image" \
 WORKDIR /usr/src/build
 
 # renovate: datasource=github-tags lookupName=git/git
-RUN install-tool git v2.47.1
+RUN install-tool git v2.48.1
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool node 20.18.1
+RUN install-tool node 20.18.2
 
 # renovate: datasource=npm
 RUN install-tool yarn 1.22.22
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool docker 27.4.1
+RUN install-tool docker 27.5.1
 COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-buildx
 RUN docker buildx install
 
 # renovate: datasource=adoptium-java
-RUN install-tool java 21.0.5+11.0.LTS
+RUN install-tool java 21.0.6+7.0.LTS
 
 # renovate: datasource=gradle-version versioning=gradle
-RUN install-tool gradle 8.12
+RUN install-tool gradle 8.12.1
 
 # renovate: datasource=maven lookupName=org.apache.maven:maven
 RUN install-tool maven 3.9.9
