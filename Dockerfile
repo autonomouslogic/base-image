@@ -13,7 +13,7 @@ WORKDIR /usr/src/build
 RUN install-tool git v2.48.1
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool node 20.18.2
+RUN install-tool node 22.14.0
 
 # renovate: datasource=npm
 RUN install-tool yarn 1.22.22
