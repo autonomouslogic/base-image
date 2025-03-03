@@ -1,5 +1,12 @@
 Base Docker Image Changelog
 
+## [1.0.7](https://github.com/autonomouslogic/base-image/compare/1.0.6...1.0.7) (2025-03-03)
+
+
+### Dependency Updates
+
+* **deps:** update all non-major dependencies ([#14](https://github.com/autonomouslogic/base-image/issues/14)) ([9d802b9](https://github.com/autonomouslogic/base-image/commit/9d802b976aaf07fde399a818108d337ed21aba3a))
+
 ## [1.0.6](https://github.com/autonomouslogic/base-image/compare/1.0.5...1.0.6) (2025-02-03)
 
 
