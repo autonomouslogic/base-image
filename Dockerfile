@@ -10,10 +10,10 @@ LABEL name="sbase-image" \
 WORKDIR /usr/src/build
 
 # renovate: datasource=github-tags lookupName=git/git
-RUN install-tool git v2.48.1
+RUN install-tool git v2.49.0
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool node 20.18.3
+RUN install-tool node 20.19.0
 
 # renovate: datasource=npm
 RUN install-tool yarn 1.22.22
