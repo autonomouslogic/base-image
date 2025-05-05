@@ -13,7 +13,7 @@ WORKDIR /usr/src/build
 RUN install-tool git v2.49.0
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool node 20.19.0
+RUN install-tool node 20.19.1
 
 # renovate: datasource=npm
 RUN install-tool yarn 1.22.22
@@ -24,10 +24,10 @@ COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-bui
 RUN docker buildx install
 
 # renovate: datasource=adoptium-java
-RUN install-tool java 21.0.6+7.0.LTS
+RUN install-tool java 21.0.7+6.0.LTS
 
 # renovate: datasource=gradle-version versioning=gradle
-RUN install-tool gradle 8.13
+RUN install-tool gradle 8.14
 
 # renovate: datasource=maven lookupName=org.apache.maven:maven
 RUN install-tool maven 3.9.9
