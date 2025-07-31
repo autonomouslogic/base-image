@@ -27,7 +27,7 @@ RUN docker buildx install
 RUN install-tool java 21.0.7+6.0.LTS
 
 # renovate: datasource=gradle-version versioning=gradle
-RUN install-tool gradle 8.14.3
+RUN install-tool gradle 9.0.0
 
 # renovate: datasource=maven lookupName=org.apache.maven:maven
 RUN install-tool maven 3.9.10
