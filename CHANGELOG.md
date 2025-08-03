@@ -1,5 +1,15 @@
 Base Docker Image Changelog
 
+## [1.0.12](https://github.com/autonomouslogic/base-image/compare/1.0.11...1.0.12) (2025-08-03)
+
+
+### Dependency Updates
+
+* **deps:** update dependency gradle to v9 ([15ad500](https://github.com/autonomouslogic/base-image/commit/15ad500d8dad849bde37111c8e3d30b06f1d975a))
+* **deps:** update docker docker tag to v28 ([fb0ed4b](https://github.com/autonomouslogic/base-image/commit/fb0ed4beec11e89062e7c8f5ed6cdb946c0d0385))
+* **deps:** update ghcr.io/containerbase/base docker tag to v13 ([de42320](https://github.com/autonomouslogic/base-image/commit/de42320327f2458329e86e613303fcf057202e51))
+* **deps:** update node.js to v22 ([ffa7ef2](https://github.com/autonomouslogic/base-image/commit/ffa7ef21ad963b12c2fd757115fa77cccba51d01))
+
 ## [1.0.11](https://github.com/autonomouslogic/base-image/compare/1.0.10...1.0.11) (2025-07-07)
 
 
