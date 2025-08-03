@@ -19,7 +19,7 @@ RUN install-tool node 20.19.3
 RUN install-tool yarn 1.22.22
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool docker 27.5.1
+RUN install-tool docker 28.3.3
 COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-buildx
 RUN docker buildx install
 
