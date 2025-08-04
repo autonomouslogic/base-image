@@ -10,10 +10,10 @@ LABEL name="sbase-image" \
 WORKDIR /usr/src/build
 
 # renovate: datasource=github-tags lookupName=git/git
-RUN install-tool git v2.50.0
+RUN install-tool git v2.50.1
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool node 22.17.1
+RUN install-tool node 22.18.0
 
 # renovate: datasource=npm
 RUN install-tool yarn 1.22.22
@@ -24,13 +24,13 @@ COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-bui
 RUN docker buildx install
 
 # renovate: datasource=adoptium-java
-RUN install-tool java 21.0.7+6.0.LTS
+RUN install-tool java 21.0.8+9.0.LTS
 
 # renovate: datasource=gradle-version versioning=gradle
 RUN install-tool gradle 9.0.0
 
 # renovate: datasource=maven lookupName=org.apache.maven:maven
-RUN install-tool maven 3.9.10
+RUN install-tool maven 3.9.11
 
 RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" \
