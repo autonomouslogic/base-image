@@ -4,6 +4,10 @@
     "github>autonomouslogic/renovate-config"
   ],
   "packageRules": [
+    {
+      "matchPackageNames": ["*"],
+      "automerge": true
+    }
   ],
   "regexManagers": [
     {
