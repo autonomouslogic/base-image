@@ -1,5 +1,18 @@
 Base Docker Image Changelog
 
+## [1.0.14](https://github.com/autonomouslogic/base-image/compare/1.0.13...1.0.14) (2025-08-16)
+
+
+### Dependency Updates
+
+* **deps:** update actions/checkout action to v5 ([88124f7](https://github.com/autonomouslogic/base-image/commit/88124f7546e126e481a09a84998fc802472bac38))
+* **deps:** update amannn/action-semantic-pull-request action to v6 ([09d485a](https://github.com/autonomouslogic/base-image/commit/09d485a0ca73496eb674c38f36a27b30d157945a))
+
+
+### Continuous Integration
+
+* Enable automerge for all packages ([3bb8e08](https://github.com/autonomouslogic/base-image/commit/3bb8e08793347fc14a4da28593caa98b78ecb3aa))
+
 ## [1.0.13](https://github.com/autonomouslogic/base-image/compare/1.0.12...1.0.13) (2025-08-04)
 
 
