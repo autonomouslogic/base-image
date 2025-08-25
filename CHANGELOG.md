@@ -1,5 +1,12 @@
 Base Docker Image Changelog
 
+## [1.0.15](https://github.com/autonomouslogic/base-image/compare/1.0.14...1.0.15) (2025-08-25)
+
+
+### Dependency Updates
+
+* **deps:** Updated Java to 24.0.2+12 ([#24](https://github.com/autonomouslogic/base-image/issues/24)) ([14aa033](https://github.com/autonomouslogic/base-image/commit/14aa033a2cf0ec6a58d12ecf571a11da603107c1))
+
 ## [1.0.14](https://github.com/autonomouslogic/base-image/compare/1.0.13...1.0.14) (2025-08-16)
 
 
