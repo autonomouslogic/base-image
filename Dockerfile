@@ -1,4 +1,4 @@
-FROM ghcr.io/containerbase/base:13.8.63
+FROM ghcr.io/containerbase/base:13.10.12
 
 LABEL name="sbase-image" \
   maintainer="Kenneth Jørgensen <kenneth@autonomouslogic.com>" \
@@ -10,10 +10,10 @@ LABEL name="sbase-image" \
 WORKDIR /usr/src/build
 
 # renovate: datasource=github-tags lookupName=git/git
-RUN install-tool git v2.50.1
+RUN install-tool git v2.51.0
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool node 22.18.0
+RUN install-tool node 22.19.0
 
 # renovate: datasource=npm
 RUN install-tool yarn 1.22.22
