@@ -1,5 +1,12 @@
 Base Docker Image Changelog
 
+## [1.0.18](https://github.com/autonomouslogic/base-image/compare/1.0.17...1.0.18) (2025-10-28)
+
+
+### Dependency Updates
+
+* **deps:** update node.js to v24 ([#28](https://github.com/autonomouslogic/base-image/issues/28)) ([cbb090c](https://github.com/autonomouslogic/base-image/commit/cbb090c3c3e1740be5e2891934c2aed456dcad1e))
+
 ## [1.0.17](https://github.com/autonomouslogic/base-image/compare/1.0.16...1.0.17) (2025-10-07)
 
 
