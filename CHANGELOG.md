@@ -1,5 +1,12 @@
 Base Docker Image Changelog
 
+## [1.0.20](https://github.com/autonomouslogic/base-image/compare/1.0.19...1.0.20) (2025-11-11)
+
+
+### Dependency Updates
+
+* **deps:** update docker docker tag to v29 ([#30](https://github.com/autonomouslogic/base-image/issues/30)) ([47d8208](https://github.com/autonomouslogic/base-image/commit/47d820856c06687af7678868dbaa9a4201e12cff))
+
 ## [1.0.19](https://github.com/autonomouslogic/base-image/compare/1.0.18...1.0.19) (2025-11-03)
 
 
