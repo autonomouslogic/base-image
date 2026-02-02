@@ -1,4 +1,4 @@
-FROM ghcr.io/containerbase/base:14.0.0
+FROM ghcr.io/containerbase/base:14.0.1
 
 LABEL name="sbase-image" \
   maintainer="Kenneth Jørgensen <kenneth@autonomouslogic.com>" \
@@ -13,21 +13,21 @@ WORKDIR /usr/src/build
 RUN install-tool git v2.52.0
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool node 24.12.0
+RUN install-tool node 24.13.0
 
 # renovate: datasource=npm
 RUN install-tool yarn 1.22.22
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool docker 29.1.3
+RUN install-tool docker 29.2.0
 COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-buildx
 RUN docker buildx install
 
 # renovate: datasource=adoptium-java
-RUN install-tool java 25.0.1+8.0.LTS
+RUN install-tool java 25.0.2+10.0.LTS
 
 # renovate: datasource=gradle-version versioning=gradle
-RUN install-tool gradle 9.2.1
+RUN install-tool gradle 9.3.1
 
 # renovate: datasource=maven lookupName=org.apache.maven:maven
 RUN install-tool maven 3.9.12
