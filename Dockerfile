@@ -1,4 +1,4 @@
-FROM ghcr.io/containerbase/base:14.0.1
+FROM ghcr.io/containerbase/base:14.4.8
 
 LABEL name="sbase-image" \
   maintainer="Kenneth Jørgensen <kenneth@autonomouslogic.com>" \
@@ -13,13 +13,13 @@ WORKDIR /usr/src/build
 RUN install-tool git v2.53.0
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool node 24.13.0
+RUN install-tool node 24.14.0
 
 # renovate: datasource=npm
 RUN install-tool yarn 1.22.22
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool docker 29.2.0
+RUN install-tool docker 29.2.1
 COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-buildx
 RUN docker buildx install
 
