@@ -1,4 +1,4 @@
-FROM ghcr.io/containerbase/base:14.4.8
+FROM ghcr.io/containerbase/base:14.4.10
 
 LABEL name="sbase-image" \
   maintainer="Kenneth Jørgensen <kenneth@autonomouslogic.com>" \
