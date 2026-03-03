@@ -1,5 +1,12 @@
 Base Docker Image Changelog
 
+## [1.0.28](https://github.com/autonomouslogic/base-image/compare/1.0.27...1.0.28) (2026-03-03)
+
+
+### Dependency Updates
+
+* **deps:** update ghcr.io/containerbase/base docker tag to v14.4.10 ([#39](https://github.com/autonomouslogic/base-image/issues/39)) ([4ba1433](https://github.com/autonomouslogic/base-image/commit/4ba143385a3f92492069ab6eeb3cb527875cb717))
+
 ## [1.0.27](https://github.com/autonomouslogic/base-image/compare/1.0.26...1.0.27) (2026-03-02)
 
 
