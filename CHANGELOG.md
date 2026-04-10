@@ -1,5 +1,12 @@
 Base Docker Image Changelog
 
+## [1.1.0](https://github.com/autonomouslogic/base-image/compare/1.0.29...1.1.0) (2026-04-10)
+
+
+### Features
+
+* Rust 1.94.1 ([9df8990](https://github.com/autonomouslogic/base-image/commit/9df899054bbbf5534695717dc589696ad4db55b2))
+
 ## [1.0.29](https://github.com/autonomouslogic/base-image/compare/1.0.28...1.0.29) (2026-04-06)
 
 
