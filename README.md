@@ -13,6 +13,7 @@ The image contains:
 * Docker
 * Node (NPM and Yarn)
 * Java (Gradle and Maven)
+* Rust
 * _Tools_
   * [`jq`](https://stedolan.github.io/jq/)
   * [GitHub CLI `gh`](https://cli.github.com/)
