@@ -1,5 +1,17 @@
 Base Docker Image Changelog
 
+## [1.2.0](https://github.com/autonomouslogic/base-image/compare/1.1.1...1.2.0) (2026-05-29)
+
+
+### Features
+
+* Added rustfmt, sleek, and wget ([#43](https://github.com/autonomouslogic/base-image/issues/43)) ([a473c60](https://github.com/autonomouslogic/base-image/commit/a473c60b2da309c698f4e267247c5f8224e31866))
+
+
+### Documentation
+
+* Rust is installed ([a579490](https://github.com/autonomouslogic/base-image/commit/a5794908433c24ddfc551cf075272a18e5b75e31))
+
 ## [1.1.1](https://github.com/autonomouslogic/base-image/compare/1.1.0...1.1.1) (2026-05-04)
 
 
