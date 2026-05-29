@@ -51,7 +51,7 @@ RUN cargo install rustfmt sleek && \
     cp /root/.cargo/bin/rustfmt \
        /root/.cargo/bin/cargo-fmt \
        /root/.cargo/bin/sleek \
-       /usr/bin/ && \
+       /usr/local/bin/ && \
     rm -R /root/.cargo
 
 WORKDIR /usr/src/app
