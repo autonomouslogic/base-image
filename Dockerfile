@@ -1,6 +1,6 @@
 FROM ghcr.io/containerbase/base:14.9.5
 
-LABEL name="sbase-image" \
+LABEL name="base-image" \
   maintainer="Kenneth Jørgensen <kenneth@autonomouslogic.com>" \
   org.opencontainers.image.title="Base Docker Image" \
   org.opencontainers.image.description="Base Docker Image." \
@@ -44,7 +44,15 @@ RUN apt-get update && \
         gh \
         jq \
         build-essential \
+        wget \
     && apt-get clean autoclean && rm -rf /var/lib/apt/lists/*
+
+RUN cargo install rustfmt sleek && \
+    cp /root/.cargo/bin/rustfmt \
+       /root/.cargo/bin/cargo-fmt \
+       /root/.cargo/bin/sleek \
+       /usr/local/bin/ && \
+    rm -R /root/.cargo
 
 WORKDIR /usr/src/app
 RUN git config --global --add safe.directory /usr/src/app
