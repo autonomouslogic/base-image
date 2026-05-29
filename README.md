@@ -11,16 +11,27 @@ The image contains:
 * Based on [Containerbase](https://github.com/containerbase/base), which is based on Ubuntu
 * Git
 * Docker
-* Node (NPM and Yarn)
-* Java (Gradle and Maven)
+* Node
+  * NPM
+  * Yarn
+* Java
+  * Gradle
+  * Maven
 * Rust
-* _Tools_
+  * [rustfmt](https://github.com/rust-lang/rustfmt)
+  * [sleek](https://crates.io/crates/sleek)
+* _Additional tools_
   * [`jq`](https://stedolan.github.io/jq/)
   * [GitHub CLI `gh`](https://cli.github.com/)
-  * Build essentials, like `make`
+  * Build essentials, like `gcc` and  `make`
+  * curl
+  * wget
 
 ## Versioning
 This Docker image follows [semantic versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/en/).
+
+## Updates
+This repo is automatically updated with the latest available versions of the above tools.
 
 ## License
 This Docker image is licensed under the [MIT-0 license](https://spdx.org/licenses/MIT-0.html),
