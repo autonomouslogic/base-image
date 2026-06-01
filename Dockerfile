@@ -1,4 +1,4 @@
-FROM ghcr.io/containerbase/base:14.9.5
+FROM ghcr.io/containerbase/base:14.10.21
 
 LABEL name="base-image" \
   maintainer="Kenneth Jørgensen <kenneth@autonomouslogic.com>" \
@@ -13,13 +13,13 @@ WORKDIR /usr/src/build
 RUN install-tool git v2.54.0
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool node 24.15.0
+RUN install-tool node 24.16.0
 
 # renovate: datasource=npm
 RUN install-tool yarn 1.22.22
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool docker 29.4.1
+RUN install-tool docker 29.5.2
 COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-buildx
 RUN docker buildx install
 
@@ -27,13 +27,13 @@ RUN docker buildx install
 RUN install-tool java 25.0.3+9.0.LTS
 
 # renovate: datasource=gradle-version versioning=gradle
-RUN install-tool gradle 9.5.0
+RUN install-tool gradle 9.5.1
 
 # renovate: datasource=maven lookupName=org.apache.maven:maven
-RUN install-tool maven 3.9.15
+RUN install-tool maven 3.9.16
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool rust 1.95.0
+RUN install-tool rust 1.96.0
 
 RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" \
