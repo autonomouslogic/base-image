@@ -1,5 +1,12 @@
 Base Docker Image Changelog
 
+## [1.2.2](https://github.com/autonomouslogic/base-image/compare/1.2.1...1.2.2) (2026-06-19)
+
+
+### Dependency Updates
+
+* **deps:** update actions/checkout action to v7 ([#45](https://github.com/autonomouslogic/base-image/issues/45)) ([9b7e769](https://github.com/autonomouslogic/base-image/commit/9b7e76919e349acad528d246beee621a1a5a7ff1))
+
 ## [1.2.1](https://github.com/autonomouslogic/base-image/compare/1.2.0...1.2.1) (2026-06-01)
 
 
