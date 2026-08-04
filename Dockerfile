@@ -13,13 +13,13 @@ WORKDIR /usr/src/build
 RUN install-tool git v2.55.0
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool node 24.18.1
+RUN install-tool node 24.19.0
 
 # renovate: datasource=npm
 RUN install-tool yarn 1.22.22
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool docker 29.7.0
+RUN install-tool docker 29.7.1
 COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-buildx
 RUN docker buildx install
 
