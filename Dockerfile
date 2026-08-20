@@ -45,7 +45,7 @@ RUN apt-get update && \
     && apt-get clean autoclean && rm -rf /var/lib/apt/lists/*
 
 # renovate: datasource=github-releases depName=rust-lang/rust
-ARG RUST_VERSION=1.97.1
+ARG RUST_VERSION=1.97.0
 ENV CARGO_HOME=/usr/local/cargo
 ENV RUSTUP_HOME=/usr/local/rustup
 ENV PATH=/usr/local/cargo/bin:$PATH
@@ -62,7 +62,7 @@ RUN rustup component add rustfmt && \
        /usr/local/bin/
 
 # renovate: datasource=docker packageName=hashicorp/terraform versioning=docker
-RUN install-tool terraform 1.15.9
+RUN install-tool terraform 1.15.8
 
 WORKDIR /usr/src/app
 RUN git config --global --add safe.directory /usr/src/app
