@@ -1,4 +1,4 @@
-FROM ghcr.io/containerbase/base:14.13.12
+FROM ghcr.io/containerbase/base:14.14.0
 
 LABEL name="base-image" \
   maintainer="Kenneth Jørgensen <kenneth@autonomouslogic.com>" \
@@ -19,15 +19,15 @@ RUN install-tool node 24.19.0
 RUN install-tool yarn 1.22.22
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool docker 29.7.1
+RUN install-tool docker 29.7.2
 COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-buildx
 RUN docker buildx install
 
 # renovate: datasource=adoptium-java
-RUN install-tool java 25.0.4+7.0.LTS
+RUN install-tool java 25.0.4+101.0.LTS
 
 # renovate: datasource=gradle-version versioning=gradle
-RUN install-tool gradle 9.6.1
+RUN install-tool gradle 9.7.1
 
 # renovate: datasource=maven lookupName=org.apache.maven:maven
 RUN install-tool maven 3.9.16
@@ -45,7 +45,7 @@ RUN apt-get update && \
     && apt-get clean autoclean && rm -rf /var/lib/apt/lists/*
 
 # renovate: datasource=github-releases depName=rust-lang/rust
-ARG RUST_VERSION=1.97.0
+ARG RUST_VERSION=1.98.0
 ENV CARGO_HOME=/usr/local/cargo
 ENV RUSTUP_HOME=/usr/local/rustup
 ENV PATH=/usr/local/cargo/bin:$PATH
@@ -62,7 +62,7 @@ RUN rustup component add rustfmt && \
        /usr/local/bin/
 
 # renovate: datasource=docker lookupName=hashicorp/terraform versioning=docker
-RUN install-tool terraform 1.15.8
+RUN install-tool terraform 1.15.9
 
 WORKDIR /usr/src/app
 RUN git config --global --add safe.directory /usr/src/app
