@@ -1,5 +1,22 @@
 Base Docker Image Changelog
 
+## [1.3.0](https://github.com/autonomouslogic/base-image/compare/1.2.5...1.3.0) (2026-08-20)
+
+
+### Features
+
+* Terraform ([#50](https://github.com/autonomouslogic/base-image/issues/50)) ([f079625](https://github.com/autonomouslogic/base-image/commit/f079625191677333fe8cd52687146207e21c64e4))
+
+
+### Bug Fixes
+
+* Rust install via Rustup ([#49](https://github.com/autonomouslogic/base-image/issues/49)) ([2a226a3](https://github.com/autonomouslogic/base-image/commit/2a226a31d15da49096a933f73c2624641e2dc278))
+
+
+### Miscellaneous Chores
+
+* Deliberately downgraded Rust and Terraform to test upgrade expressions ([d91009b](https://github.com/autonomouslogic/base-image/commit/d91009b6d303e36ca991c49654d153c3c0f0e014))
+
 ## [1.2.5](https://github.com/autonomouslogic/base-image/compare/1.2.4...1.2.5) (2026-08-04)
 
 
