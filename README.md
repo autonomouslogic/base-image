@@ -24,8 +24,8 @@ The image contains:
   * [`jq`](https://stedolan.github.io/jq/)
   * [GitHub CLI `gh`](https://cli.github.com/)
   * Build essentials, like `gcc` and  `make`
-  * curl
-  * wget
+  * `curl`
+  * `wget`
 
 ## Versioning
 This Docker image follows [semantic versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/en/).

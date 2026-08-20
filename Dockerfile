@@ -32,8 +32,17 @@ RUN install-tool gradle 9.6.1
 # renovate: datasource=maven lookupName=org.apache.maven:maven
 RUN install-tool maven 3.9.16
 
-# renovate: datasource=docker versioning=docker
-RUN install-tool rust 1.97.1
+ENV CARGO_HOME=/usr/local/cargo
+ENV RUSTUP_HOME=/usr/local/rustup
+ENV PATH=/usr/local/cargo/bin:$PATH
+
+# renovate: datasource=github-releases depName=rust-lang/rust
+ARG RUST_VERSION=1.97.1
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- \
+    --default-toolchain ${RUST_VERSION} \
+    --profile minimal \
+    --no-modify-path \
+    -y
 
 RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" \
@@ -47,12 +56,12 @@ RUN apt-get update && \
         wget \
     && apt-get clean autoclean && rm -rf /var/lib/apt/lists/*
 
-RUN cargo install rustfmt sleek && \
-    cp /root/.cargo/bin/rustfmt \
-       /root/.cargo/bin/cargo-fmt \
-       /root/.cargo/bin/sleek \
-       /usr/local/bin/ && \
-    rm -R /root/.cargo
+RUN rustup component add rustfmt && \
+    cargo install sleek && \
+    cp /usr/local/cargo/bin/rustfmt \
+       /usr/local/cargo/bin/cargo-fmt \
+       /usr/local/cargo/bin/sleek \
+       /usr/local/bin/
 
 WORKDIR /usr/src/app
 RUN git config --global --add safe.directory /usr/src/app
