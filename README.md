@@ -20,6 +20,7 @@ The image contains:
 * Rust
   * [rustfmt](https://github.com/rust-lang/rustfmt)
   * [sleek](https://crates.io/crates/sleek)
+* Terraform
 * _Additional tools_
   * [`jq`](https://stedolan.github.io/jq/)
   * [GitHub CLI `gh`](https://cli.github.com/)
