@@ -61,7 +61,7 @@ RUN rustup component add rustfmt && \
        /usr/local/cargo/bin/sleek \
        /usr/local/bin/
 
-# renovate: datasource=docker packageName=hashicorp/terraform versioning=docker
+# renovate: datasource=docker lookupName=hashicorp/terraform versioning=docker
 RUN install-tool terraform 1.15.8
 
 WORKDIR /usr/src/app
