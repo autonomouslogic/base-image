@@ -54,5 +54,8 @@ RUN cargo install rustfmt sleek && \
        /usr/local/bin/ && \
     rm -R /root/.cargo
 
+# renovate: datasource=docker packageName=hashicorp/terraform versioning=docker
+RUN install-tool terraform 1.15.9
+
 WORKDIR /usr/src/app
 RUN git config --global --add safe.directory /usr/src/app
