@@ -1,5 +1,17 @@
 Base Docker Image Changelog
 
+## [1.3.1](https://github.com/autonomouslogic/base-image/compare/1.3.0...1.3.1) (2026-08-21)
+
+
+### Dependency Updates
+
+* **deps:** update all non-major dependencies ([#51](https://github.com/autonomouslogic/base-image/issues/51)) ([8e699ff](https://github.com/autonomouslogic/base-image/commit/8e699ff177a5036cf84e8e652251b37b607bf835))
+
+
+### Miscellaneous Chores
+
+* Fixed Terraform Renovate expression ([0434c62](https://github.com/autonomouslogic/base-image/commit/0434c62aa0f7be3a9c6c395944d090ee0da769b4))
+
 ## [1.3.0](https://github.com/autonomouslogic/base-image/compare/1.2.5...1.3.0) (2026-08-20)
 
 
