@@ -7,6 +7,11 @@
     {
       "matchPackageNames": ["*"],
       "automerge": true
+    },
+    {
+      "description": "Java gets its own PR because Adoptium build numbers can be invalid (e.g. +101 instead of +7), causing build failures that would otherwise block all other updates",
+      "matchDatasources": ["adoptium-java"],
+      "groupName": "java"
     }
   ],
   "regexManagers": [
