@@ -10,31 +10,23 @@
     },
     {
       "description": "Java gets its own PR because Adoptium build numbers can be invalid (e.g. +101 instead of +7), causing build failures that would otherwise block all other updates",
-      "matchDatasources": ["adoptium-java"],
+      "matchDatasources": ["java-version"],
       "groupName": "java"
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "description": "Update install-* Buildpack commands in Dockerfiles - from renovatebot/.github",
-      "fileMatch": [
-        "(^|/|\\.)Dockerfile$",
-        "(^|/)Dockerfile\\.[^/]*$"
-      ],
-      "matchStrings": [
-        "# renovate: datasource=(?<datasource>[a-z-]+?)(?: lookupName=(?<lookupName>.+?))?(?: versioning=(?<versioning>[a-z-]+?))?\\sRUN install-[a-z]+? (?<depName>[a-z-]+?) (?<currentValue>.+?)\\s"
-      ],
+      "managerFilePatterns": ["/(^|/|\\.)Dockerfile$/", "/(^|/)Dockerfile\\.[^/]*$/"],
+      "matchStrings": ["# renovate: datasource=(?<datasource>[a-z-]+?)(?: lookupName=(?<packageName>.+?))?(?: versioning=(?<versioning>[a-z-]+?))?\\sRUN install-[a-z]+? (?<depName>[a-z-]+?) (?<currentValue>.+?)\\s"],
       "versioningTemplate": "{{#if versioning}}{{versioning}}{{else}}semver{{/if}}"
     },
     {
+      "customType": "regex",
       "description": "Update ARG-based tool versions in Dockerfiles",
-      "fileMatch": [
-        "(^|/|\\.)Dockerfile$",
-        "(^|/)Dockerfile\\.[^/]*$"
-      ],
-      "matchStrings": [
-        "# renovate: datasource=(?<datasource>[a-z.-]+?)(?: depName=(?<depName>.+?))?(?: versioning=(?<versioning>[a-z-]+?))?\\sARG \\w+=(?<currentValue>.+?)\\s"
-      ],
+      "managerFilePatterns": ["/(^|/|\\.)Dockerfile$/", "/(^|/)Dockerfile\\.[^/]*$/"],
+      "matchStrings": ["# renovate: datasource=(?<datasource>[a-z.-]+?)(?: depName=(?<depName>.+?))?(?: versioning=(?<versioning>[a-z-]+?))?\\sARG \\w+=(?<currentValue>.+?)\\s"],
       "versioningTemplate": "{{#if versioning}}{{versioning}}{{else}}semver{{/if}}"
     }
   ]
