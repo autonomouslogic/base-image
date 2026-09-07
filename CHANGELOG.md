@@ -1,5 +1,13 @@
 Base Docker Image Changelog
 
+## [1.3.2](https://github.com/autonomouslogic/base-image/compare/1.3.1...1.3.2) (2026-09-07)
+
+
+### Dependency Updates
+
+* **deps:** update all non-major dependencies ([#54](https://github.com/autonomouslogic/base-image/issues/54)) ([59ae757](https://github.com/autonomouslogic/base-image/commit/59ae7572398d2cd6db071bed05b409109a18c74b))
+* **deps:** update dependency java to v25.0.4+101.0.lts ([#53](https://github.com/autonomouslogic/base-image/issues/53)) ([7cfd86d](https://github.com/autonomouslogic/base-image/commit/7cfd86dde4e00bc4413bd38e776220a96c7c2e22))
+
 ## [1.3.1](https://github.com/autonomouslogic/base-image/compare/1.3.0...1.3.1) (2026-08-21)
 
 
