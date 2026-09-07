@@ -1,4 +1,4 @@
-FROM ghcr.io/containerbase/base:14.14.0
+FROM ghcr.io/containerbase/base:14.14.4
 
 LABEL name="base-image" \
   maintainer="Kenneth Jørgensen <kenneth@autonomouslogic.com>" \
@@ -13,13 +13,13 @@ WORKDIR /usr/src/build
 RUN install-tool git v2.55.0
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool node 24.19.0
+RUN install-tool node 24.20.0
 
 # renovate: datasource=npm
 RUN install-tool yarn 1.22.22
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool docker 29.7.2
+RUN install-tool docker 29.8.0
 COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-buildx
 RUN docker buildx install
 
@@ -45,7 +45,7 @@ RUN apt-get update && \
     && apt-get clean autoclean && rm -rf /var/lib/apt/lists/*
 
 # renovate: datasource=github-releases depName=rust-lang/rust
-ARG RUST_VERSION=1.98.0
+ARG RUST_VERSION=1.98.1
 ENV CARGO_HOME=/usr/local/cargo
 ENV RUSTUP_HOME=/usr/local/rustup
 ENV PATH=/usr/local/cargo/bin:$PATH
@@ -62,7 +62,7 @@ RUN rustup component add rustfmt && \
        /usr/local/bin/
 
 # renovate: datasource=docker lookupName=hashicorp/terraform versioning=docker
-RUN install-tool terraform 1.15.9
+RUN install-tool terraform 1.16.1
 
 WORKDIR /usr/src/app
 RUN git config --global --add safe.directory /usr/src/app
