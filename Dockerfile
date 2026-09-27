@@ -40,6 +40,7 @@ RUN apt-get update && \
     apt-get install -y \
         gh \
         jq \
+        sqlite3 \
         build-essential \
         wget \
     && apt-get clean autoclean && rm -rf /var/lib/apt/lists/*
