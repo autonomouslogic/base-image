@@ -43,6 +43,7 @@ RUN apt-get update && \
         sqlite3 \
         mysql-client \
         postgresql-client \
+        redis-tools \
         build-essential \
         wget \
     && apt-get clean autoclean && rm -rf /var/lib/apt/lists/*
