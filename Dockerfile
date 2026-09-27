@@ -42,6 +42,7 @@ RUN apt-get update && \
         jq \
         sqlite3 \
         mysql-client \
+        postgresql-client \
         build-essential \
         wget \
     && apt-get clean autoclean && rm -rf /var/lib/apt/lists/*
