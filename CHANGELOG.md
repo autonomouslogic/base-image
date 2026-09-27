@@ -1,5 +1,21 @@
 Base Docker Image Changelog
 
+## [1.4.0](https://github.com/autonomouslogic/base-image/compare/1.3.2...1.4.0) (2026-09-27)
+
+
+### Features
+
+* MySQL ([#56](https://github.com/autonomouslogic/base-image/issues/56)) ([f3aaee7](https://github.com/autonomouslogic/base-image/commit/f3aaee759efacafc10b750a91bb8963d5a49af45))
+* PostgreSQL ([#57](https://github.com/autonomouslogic/base-image/issues/57)) ([1bf5d2c](https://github.com/autonomouslogic/base-image/commit/1bf5d2c912edd1a5cb1d9b18006ece159da9e6f1))
+* Redis tools ([#58](https://github.com/autonomouslogic/base-image/issues/58)) ([91c9fe8](https://github.com/autonomouslogic/base-image/commit/91c9fe85646d0a991a18a67a037dbbae7a15decd))
+* Sqlite ([#55](https://github.com/autonomouslogic/base-image/issues/55)) ([6681fce](https://github.com/autonomouslogic/base-image/commit/6681fcebe621b0ed15f3cf21b2559278005436c0))
+
+
+### Miscellaneous Chores
+
+* AGENTS.md ([3b15f5c](https://github.com/autonomouslogic/base-image/commit/3b15f5ce3c24976a6060181083842f3a730d27e9))
+* **config:** migrate Renovate config ([#52](https://github.com/autonomouslogic/base-image/issues/52)) ([cfd046b](https://github.com/autonomouslogic/base-image/commit/cfd046b9f04a129f422509cb1d53ad61580d665e))
+
 ## [1.3.2](https://github.com/autonomouslogic/base-image/compare/1.3.1...1.3.2) (2026-09-07)
 
 
