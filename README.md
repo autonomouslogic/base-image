@@ -27,6 +27,7 @@ The image contains:
   * [`sqlite3`](https://www.sqlite.org/)
   * [`mysql-client`](https://www.mysql.com/)
   * [`postgresql-client`](https://www.postgresql.org/)
+  * [`redis-tools`](https://redis.io/) (Redis CLI)
   * Build essentials, like `gcc` and  `make`
   * `curl`
   * `wget`

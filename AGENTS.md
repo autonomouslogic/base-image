@@ -126,6 +126,7 @@ docker run --rm autonomouslogic/base-image:dev bash -c 'set -e
   java -version; gradle --version; mvn --version
   rustc --version; cargo --version; rustfmt --version; sleek --version
   terraform version; gh --version; jq --version
+  redis-cli --version
   gcc --version; make --version; curl --version; wget --version'
 ```
 
