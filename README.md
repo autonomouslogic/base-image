@@ -25,6 +25,7 @@ The image contains:
   * [`jq`](https://stedolan.github.io/jq/)
   * [GitHub CLI `gh`](https://cli.github.com/)
   * [`sqlite3`](https://www.sqlite.org/)
+  * [`mysql-client`](https://www.mysql.com/)
   * Build essentials, like `gcc` and  `make`
   * `curl`
   * `wget`
