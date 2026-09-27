@@ -24,6 +24,7 @@ The image contains:
 * _Additional tools_
   * [`jq`](https://stedolan.github.io/jq/)
   * [GitHub CLI `gh`](https://cli.github.com/)
+  * [`sqlite3`](https://www.sqlite.org/)
   * Build essentials, like `gcc` and  `make`
   * `curl`
   * `wget`
