@@ -1,4 +1,4 @@
-FROM ghcr.io/containerbase/base:14.14.4
+FROM ghcr.io/containerbase/base:14.26.2
 
 LABEL name="base-image" \
   maintainer="Kenneth Jørgensen <kenneth@autonomouslogic.com>" \
@@ -10,16 +10,16 @@ LABEL name="base-image" \
 WORKDIR /usr/src/build
 
 # renovate: datasource=github-tags lookupName=git/git
-RUN install-tool git v2.55.0
+RUN install-tool git v2.56.0
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool node 24.20.0
+RUN install-tool node 24.21.0
 
 # renovate: datasource=npm
 RUN install-tool yarn 1.22.22
 
 # renovate: datasource=docker versioning=docker
-RUN install-tool docker 29.8.0
+RUN install-tool docker 29.8.2
 COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-buildx
 RUN docker buildx install
 
@@ -27,10 +27,10 @@ RUN docker buildx install
 RUN install-tool java 25.0.4+101.0.LTS
 
 # renovate: datasource=gradle-version versioning=gradle
-RUN install-tool gradle 9.7.1
+RUN install-tool gradle 9.8.0
 
 # renovate: datasource=maven lookupName=org.apache.maven:maven
-RUN install-tool maven 3.9.16
+RUN install-tool maven 3.10.0
 
 RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" \
@@ -49,7 +49,7 @@ RUN apt-get update && \
     && apt-get clean autoclean && rm -rf /var/lib/apt/lists/*
 
 # renovate: datasource=github-releases depName=rust-lang/rust
-ARG RUST_VERSION=1.98.1
+ARG RUST_VERSION=1.99.0
 ENV CARGO_HOME=/usr/local/cargo
 ENV RUSTUP_HOME=/usr/local/rustup
 ENV PATH=/usr/local/cargo/bin:$PATH
@@ -66,7 +66,7 @@ RUN rustup component add rustfmt && \
        /usr/local/bin/
 
 # renovate: datasource=docker lookupName=hashicorp/terraform versioning=docker
-RUN install-tool terraform 1.16.1
+RUN install-tool terraform 1.16.5
 
 WORKDIR /usr/src/app
 RUN git config --global --add safe.directory /usr/src/app
