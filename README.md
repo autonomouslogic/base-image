@@ -17,6 +17,7 @@ The image contains:
 * Java
   * Gradle
   * Maven
+* Python 3
 * Rust
   * [rustfmt](https://github.com/rust-lang/rustfmt)
   * [sleek](https://crates.io/crates/sleek)

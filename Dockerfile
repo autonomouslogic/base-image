@@ -32,6 +32,9 @@ RUN install-tool gradle 9.8.0
 # renovate: datasource=maven lookupName=org.apache.maven:maven
 RUN install-tool maven 3.10.0
 
+# renovate: datasource=python-version
+RUN install-tool python 3.13.17
+
 RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" \
     | tee /etc/apt/sources.list.d/github-cli.list > /dev/null
