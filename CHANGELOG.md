@@ -1,5 +1,17 @@
 Base Docker Image Changelog
 
+## [1.5.0](https://github.com/autonomouslogic/base-image/compare/1.4.1...1.5.0) (2026-10-25)
+
+
+### Features
+
+* Python ([#60](https://github.com/autonomouslogic/base-image/issues/60)) ([b034795](https://github.com/autonomouslogic/base-image/commit/b0347952e5cbf7b305fd31e73e47ae7142cc2990))
+
+
+### Bug Fixes
+
+* Java 27 ([#61](https://github.com/autonomouslogic/base-image/issues/61)) ([3fe4d93](https://github.com/autonomouslogic/base-image/commit/3fe4d93e665626025e7449b79ded8a99c11584f8))
+
 ## [1.4.1](https://github.com/autonomouslogic/base-image/compare/1.4.0...1.4.1) (2026-10-06)
 
 
