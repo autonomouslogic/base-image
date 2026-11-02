@@ -1,5 +1,13 @@
 Base Docker Image Changelog
 
+## [1.5.1](https://github.com/autonomouslogic/base-image/compare/1.5.0...1.5.1) (2026-11-02)
+
+
+### Dependency Updates
+
+* **deps:** update all non-major dependencies ([#63](https://github.com/autonomouslogic/base-image/issues/63)) ([2993a06](https://github.com/autonomouslogic/base-image/commit/2993a065dc9b6b8dba600cf34849627346f9b85e))
+* **deps:** update node.js to v26 ([#62](https://github.com/autonomouslogic/base-image/issues/62)) ([7d5451e](https://github.com/autonomouslogic/base-image/commit/7d5451eb69749df130e7ddd85b6db4de2b905864))
+
 ## [1.5.0](https://github.com/autonomouslogic/base-image/compare/1.4.1...1.5.0) (2026-10-25)
 
 
