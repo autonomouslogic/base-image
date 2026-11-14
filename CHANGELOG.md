@@ -1,5 +1,9 @@
 Base Docker Image Changelog
 
+## <small>1.5.3 (2026-11-14)</small>
+
+* fix(deps): Downgraded to Java 25 ([be867e8](https://github.com/autonomouslogic/base-image/commit/be867e8))
+
 ## [1.5.2](https://github.com/autonomouslogic/base-image/compare/1.5.1...1.5.2) (2026-11-03)
 
 
