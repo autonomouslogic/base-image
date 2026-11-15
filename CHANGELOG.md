@@ -1,5 +1,9 @@
 Base Docker Image Changelog
 
+## 1.6.0 (2026-11-15)
+
+* feat: Vim and nano ([83fd4c4](https://github.com/autonomouslogic/base-image/commit/83fd4c4))
+
 ## <small>1.5.3 (2026-11-14)</small>
 
 * fix(deps): Downgraded to Java 25 ([be867e8](https://github.com/autonomouslogic/base-image/commit/be867e8))
