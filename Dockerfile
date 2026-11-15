@@ -49,6 +49,8 @@ RUN apt-get update && \
         redis-tools \
         build-essential \
         wget \
+        vim \
+        nano \
     && apt-get clean autoclean && rm -rf /var/lib/apt/lists/*
 
 # renovate: datasource=github-releases depName=rust-lang/rust

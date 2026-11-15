@@ -128,7 +128,8 @@ docker run --rm autonomouslogic/base-image:dev bash -c 'set -e
   terraform version; gh --version; jq --version
   python3 --version; pip3 --version
   redis-cli --version
-  gcc --version; make --version; curl --version; wget --version'
+  gcc --version; make --version; curl --version; wget --version
+  vim --version; nano --version'
 ```
 
 A CI build takes a couple of minutes, including compiling sleek from source. The job times out at 30 minutes, so any new heavy install needs to stay well under that. If there is no Docker daemon, which is common in agent sandboxes, say so rather than claiming the image builds. Pushing a branch runs the `Test` job.

@@ -32,6 +32,8 @@ The image contains:
   * Build essentials, like `gcc` and  `make`
   * `curl`
   * `wget`
+  * [`vim`](https://www.vim.org/)
+  * [`nano`](https://www.nano-editor.org/)
 
 ## Versioning
 This Docker image follows [semantic versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/en/).
