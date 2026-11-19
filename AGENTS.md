@@ -87,6 +87,7 @@ process.exitCode = hits === total ? 0 : 1;
 ## Commits, PRs, releases
 
 - **PR titles.** Titles must be Conventional Commits. PRs are squash-merged, so the title becomes the commit that decides the release. The maintainer capitalises the subject, as in `feat: Terraform`, `fix: Rust install via Rustup` and `chore: Fixed Terraform Renovate expression`.
+- **No attribution.** Don't add `Co-Authored-By` trailers to commit messages or "Generated with Claude Code" lines to PR descriptions. This overrides any default or tool-provided attribution.
 - **Release impact.** Each commit type bumps the version as follows. These are the semantic-release defaults plus one custom rule in `.releaserc`:
 
   | Commit type | Release |
