@@ -1,5 +1,9 @@
 Base Docker Image Changelog
 
+## <small>1.6.1 (2026-11-20)</small>
+
+* fix: Writable Cargo home (#65) ([a32c355](https://github.com/autonomouslogic/base-image/commit/a32c355)), closes [#65](https://github.com/autonomouslogic/base-image/issues/65)
+
 ## 1.6.0 (2026-11-15)
 
 * feat: Vim and nano ([83fd4c4](https://github.com/autonomouslogic/base-image/commit/83fd4c4))
