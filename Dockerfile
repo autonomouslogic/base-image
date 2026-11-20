@@ -68,7 +68,8 @@ RUN rustup component add rustfmt && \
     cp /usr/local/cargo/bin/rustfmt \
        /usr/local/cargo/bin/cargo-fmt \
        /usr/local/cargo/bin/sleek \
-       /usr/local/bin/
+       /usr/local/bin/ && \
+    chmod -R a+rwX /usr/local/cargo
 
 # renovate: datasource=docker lookupName=hashicorp/terraform versioning=docker
 RUN install-tool terraform 1.17.1
