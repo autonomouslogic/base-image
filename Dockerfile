@@ -1,4 +1,4 @@
-FROM ghcr.io/containerbase/base:14.61.0
+FROM ghcr.io/containerbase/base:15.0.1
 
 LABEL name="base-image" \
   maintainer="Kenneth Jørgensen <kenneth@autonomouslogic.com>" \
