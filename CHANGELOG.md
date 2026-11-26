@@ -1,5 +1,9 @@
 Base Docker Image Changelog
 
+## <small>1.6.2 (2026-11-26)</small>
+
+* chore(deps): update ghcr.io/containerbase/base docker tag to v15 (#66) ([078ad87](https://github.com/autonomouslogic/base-image/commit/078ad87)), closes [#66](https://github.com/autonomouslogic/base-image/issues/66)
+
 ## <small>1.6.1 (2026-11-20)</small>
 
 * fix: Writable Cargo home (#65) ([a32c355](https://github.com/autonomouslogic/base-image/commit/a32c355)), closes [#65](https://github.com/autonomouslogic/base-image/issues/65)
